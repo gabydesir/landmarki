@@ -1,0 +1,13 @@
+<h1>The World's Most Wonderful Landmarks</h1>
+
+<div class="country">
+  <ul>
+
+  <% @countries.each do |country| %>
+    <!-- <li><%= country.capital %></li>
+    <li><%= country.continent %></li> -->
+  <li><%= link_to country.name, country_path(country) %></li><br>
+  <% end %>
+
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<h1><%= @country.name %></h1>
+
+<p>Capital: <%= @country.capital %></p>
+<p>Continent: <%= @country.continent %> </p>
+
+<ul>
+  <% @landmarks.each do |landmark| %>
+    <img src="<%= landmark.photo%>" style="width:60%;height:40%;"/>
+    <li><%= landmark.name %></li>
+    <li><%= landmark.description %></li>
+
+
+  <% end %>
+</ul>
+
+<%= link_to "All Countries", countries_path %>
