@@ -34,7 +34,7 @@ I first created a database which contains 2 tables. Then created my
 models, controllers, routes and views. Lastly, I worked on debugging and 
 styling. 
 
-[ERD](docs/ERD_Ruby_App.png)
+[ERD](countries/ERD_Ruby_App.png)
 
 ## Time Management 
 From inception to realization, it took me approximately 25 hours to 
