@@ -2,7 +2,7 @@
 <p>Select a country to see some of the world's most
 breathtaking landmarks</p>
 <div class="country">
-  <ul>
+  <ol>
 
   <% @countries.each do |country| %>
     <!-- <li><%= country.capital %></li>
@@ -10,7 +10,7 @@ breathtaking landmarks</p>
   <li><%= link_to country.name, country_path(country) %></li><br>
   <% end %>
 
-  </ul>
+  </ol>
 
   <p><%= link_to "Create New Country", new_country_path %></p>
 

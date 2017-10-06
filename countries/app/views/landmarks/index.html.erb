@@ -1,14 +1,14 @@
 <h1>Landmarks</h1>
 <p>Select one, and be prepared to be amazedddd😎😆</p>
 <div class="country">
-  <ul>
+  <ol>
 
   <% @landmarks.each do |landmark| %>
 
   <li><%= link_to landmark.name, landmark_path(landmark) %></li><br>
   <% end %>
 
-  </ul>
+  </ol>
 
   <p><%= link_to "Create New Landmark", new_landmark_path(@country) %></p>
 
