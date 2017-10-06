@@ -1,0 +1,19 @@
+<h1><%= @landmark.name %></h1>
+
+<ul>
+    <img src="<%= @landmark.photo%>" style="width:60%;height:40%;"/>
+    <li>Country: <%= @country.name %></li>
+    <li>Continent: <%= @country.continent %> </li>
+    <li><%= @landmark.description %></li>
+
+
+</ul>
+
+<%= link_to "All Landmarks", landmarks_path %>
+<p><%= link_to "Create New Landmark", new_landmark_path(@country) %></p>
+
+
+
+<%= link_to 'Edit Landmark!', edit_landmark_path %>
+<%= link_to 'Delete Landmark', landmark_path(@landmark), method: :delete,
+    data: { confirm: "Are you sure you want to delete #{@landmark.name}?" } %>

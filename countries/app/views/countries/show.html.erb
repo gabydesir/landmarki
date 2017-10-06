@@ -5,12 +5,14 @@
 
 <ul>
   <% @landmarks.each do |landmark| %>
-    <img src="<%= landmark.photo%>" style="width:60%;height:40%;"/>
-    <li><%= landmark.name %></li>
-    <li><%= landmark.description %></li>
+    <li><%= link_to landmark.name, landmark_path(landmark) %></li>
 
 
   <% end %>
 </ul>
 
 <%= link_to "All Countries", countries_path %>
+
+<%= link_to 'Edit Country!', edit_country_path %>
+<%= link_to 'Delete Country', country_path(@country), method: :delete,
+    data: { confirm: "Are you sure you want to delete #{@country.name}?" } %>

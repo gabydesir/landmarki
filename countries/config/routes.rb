@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-
-    resources :countries
     resources :landmarks
+
+    resources :countries do
+      resources :landmarks, only: [:create, :new, :show]
+    end
 end
