@@ -41,6 +41,40 @@ p {
   color: #F4A460;
 }
 
+@media only screen and (min-device-width: 400px) {
+img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.form {
+  margin: 25px;
+  font-size: 20px;
+}
+
+#countries {
+  margin:20px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#submit:hover {
+  color: #7CFC00;
+}
+
+.createCountry {
+  margin: 25px;
+  font-size: 20px;
+}
+
+#submitCountry:hover {
+  color: #7CFC00;
+}
+
+
+
+
 
 
 

@@ -1,21 +1,21 @@
 <%= form_for(@country) do |f| %>
 
-<div>
+<div class="createCountry">
   <%= f.label :name %><br>
   <%= f.text_field :name %><br>
 </div>
 
-<div>
+<div class="createCountry">
   <%= f.label :capital %><br>
   <%= f.text_area :capital %><br>
 </div>
 
-<div>
+<div class="createCountry">
   <%= f.label :continent %><br>
   <%= f.text_area :continent %><br>
 </div>
 
-<div>
+<div class="submitCountry">
   <%= f.submit %><br>
 </div>
 

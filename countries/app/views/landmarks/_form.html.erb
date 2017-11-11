@@ -6,30 +6,31 @@ Before you create a new landmark, please create a
 If you did, here's your cocktail 🍸🍹
 </p>
 
-<div>
+<div class="form">
   <%= f.label :name %><br>
   <%= f.text_field :name %><br>
 </div>
 
-<div>
+<div class="form">
   <%= f.label :description %><br>
   <%= f.text_area :description %><br>
 </div>
 
-<div>
+<div class="form">
   <%= f.label :photo %><br>
   <%= f.text_field :photo, placeholder:"insert your url🙃" %><br>
 </div>
 
-<div>
+<div class="form">
 <%= f.collection_select(:country_id, Country.all, :id, :name ) %><br>
 </div>
 
-<div>
+<div id="submit">
   <%= f.submit %><br>
 </div>
 
+<div id=countries>
 <%= link_to "Countries", countries_path %><br>
-
+</div>
 
 <% end %>
